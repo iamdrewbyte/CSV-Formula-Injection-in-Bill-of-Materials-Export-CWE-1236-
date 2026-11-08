@@ -164,18 +164,6 @@ Alternative/defense-in-depth: refuse to export fields beginning with those chara
 //    evaluation / external-link updates when prompted.
 ```
 
-## Attachments
-
-- `quote_harness.rs` — minimal harness reproducing `bom.rs:424-445` verbatim; compiles and runs standalone
-- `bom.csv` — actual bytes produced by the harness
-- `catch_exfil.py` — stand-in listener for `attacker.example`
-- `caught_exfil.log` — raw log of the two real inbound requests from LibreOffice
-- `poc_script.json` — full control-channel/CLI reproduction script
-- `01_csv_import_dialog_shows_raw_formula.png`
-- `02_default_import_formula_inert_as_text.png`
-- `03_evaluate_formulas_checked_security_banner.png`
-- `04_allow_updating_clicked_webservice_returns_ok.png`
-
 ## Disclosure
 
 Per the project's `SECURITY.md`, this report should be filed privately through GitHub Security Advisories:
