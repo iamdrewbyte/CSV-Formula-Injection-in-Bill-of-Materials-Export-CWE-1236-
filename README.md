@@ -1,13 +1,21 @@
 # CSV Formula Injection in Bill of Materials Export (CWE-1236)
 
 **Project:** tangency-labs/solidcraft
+<br>
 **Commit audited:** dc679cae34fb7db4e6b230b45256c1b2554cabca (workspace 0.40.0-rc.3)
+<br>
 **Component:** `crates/engine/src/cmd/bom.rs` — `quote()` (line 424), `csv()` (line 430)
+<br>
 **Upstream validator:** `check_text()`, `crates/doc/src/metadata.rs:149-157`
+<br>
 **CWE:** CWE-1236 — Improper Neutralization of Formula Elements in a CSV File
+<br>
 **CVSS 3.1:** 7.6 — `AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L`
+<br>
 **Attack vector:** A malicious `.sc` design file (or a direct `component.metadata.set` / MCP / CLI call) shared with a victim
+<br>
 
+Vendor - https://github.com/tangency-labs/solidcraft
 ---
 
 ## Summary
